@@ -10,13 +10,13 @@ driver.get(url)
 
 time.sleep(10)
 
-svets = driver.find_elements(By.CLASS_NAME, '_Ud0k U4KZV')
+svets = driver.find_elements(By.CLASS_NAME, 'WdR1o')
 
 parsed_data = []
 
 for svet in svets:
     try:
-        name = svet.find_element(By.CSS_SELECTOR, 'span.ui-GPFV8 qUioe ProductName ActiveProduct').text
+        name = svet.find_element(By.CSS_SELECTOR, 'span.wYUX2').text
         price = svet.find_element(By.CSS_SELECTOR, 'span.ui-LD-ZU KIkOH').text
         link = svet.find_element(By.CSS_SELECTOR, 'a.class=ui-GPFV8 qUioe ProductName ActiveProduct').get_attribute('href')
     except:

@@ -12,7 +12,7 @@ driver.get(url)
 
 time.sleep(10)
 
-svets = driver.find_elements(By.CLASS_NAME, '_Ud0k U4KZV')
+svets = driver.find_elements(By.CLASS_NAME, 'LlPhw')
 
 parsed_data = []
 #
@@ -36,7 +36,7 @@ parsed_data = []
 
 # Ожидание появления элемента на странице
 try:
-    WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'span.pY3d2')))
+    WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, 'LlPhw')))
     print("Элементы на странице найдены")
 except:
     print("Элементы не были найдены в течение 10 секунд")
